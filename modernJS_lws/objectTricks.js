@@ -38,3 +38,12 @@ const values2 = Object.values(myObj1);
 const entries3 = Object.entries(myObj1);
 console.log('\n','New line ', '\n' ,keys , '\n' , values , '\n' , entries) ;
 console.log(myObj1.x);
+
+
+// default parameter value
+function myFunc ( x= 10){
+    return x; 
+}
+console.log(myFunc(undefined));
+console.log(myFunc());
+console.log(myFunc(null));
