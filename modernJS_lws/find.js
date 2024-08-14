@@ -6,7 +6,7 @@
 var numbers = [1, 2, 3, 4, 5, 6];
 var result = numbers.find(function (currentValue, currentIndex, arr) {
   return currentValue > 4;
-});
+}, this); //here also have this because in a function need to use this to use construct /object property. When use array function then don't need uses "this" keyword behaves differently. Arrow functions don't redefine "this" as their semantics are different. 
 
 console.log(numbers);
 console.log(result);
