@@ -25,3 +25,10 @@ const users = [
   // Output: { id: 2, name: 'Bob', age: 30 }
   
  /*  find() returns the first object where user.name === 'Bob'. If no element satisfies the condition, it returns undefined. */
+
+
+ const result1 = numbers.findIndex((currentValue, index, arr) => {
+    return currentValue > 20; // if not have the indexValue then will return -1;
+
+ });
+ console.log(result1)
