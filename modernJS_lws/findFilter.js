@@ -3,7 +3,7 @@
 // syntax
 //array.find(callback(element, index, array), thisArg);
 
-var numbers = [1, 2, 3, 4, 5, 6];
+var numbers = [1, 2, 34,3, 4,45, 5, 6,10,20];
 var result = numbers.find(function (currentValue, currentIndex, arr) {
   return currentValue > 4;
 }, this); //here also have this because in a function need to use this to use construct /object property. When use array function then don't need uses "this" keyword behaves differently. Arrow functions don't redefine "this" as their semantics are different. 
@@ -31,4 +31,15 @@ const users = [
     return currentValue > 20; // if not have the indexValue then will return -1;
 
  });
- console.log(result1)
+ console.log(result1);
+
+
+//  array.prototype.filter():
+var filterResult = numbers.filter((currentValue, index, arr)=> {
+  console.log(index);
+  console.log(arr);
+  return currentValue > 10;
+})
+console.log('numbers array' , numbers)
+console.log(filterResult); 
+// filter is a method which can change the array
