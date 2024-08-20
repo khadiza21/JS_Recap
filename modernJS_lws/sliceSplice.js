@@ -28,3 +28,10 @@ console.log(newArr);
 // [ 'e', 'f' ]
 // [ 'a', 'b' ]
 // [ 'c', 'd', 'c', 'g' ]
+
+
+// slice in string 
+const  sentence = " I am not honest. But I want to ...";
+const part = sentence.slice(2,6); //strat from index 2 and print before 6 index , 2 to 5 index
+console.log(part);
+
