@@ -85,6 +85,14 @@ function printUserInfo({ name, age }) {
 printUserInfo({ name: "Alice", age: 25 }); // Output: Name: Alice, Age: 25
 console.log("new");
 
+
+
+let x = 5;
+let y = 6;
+console.log(x,y);
+[x,y] = [y,x]; //here value will set index wise
+console.log(x,y);
+
 /* Array Destructuring: Unpacks values from arrays into variables, supports skipping values and setting default values.
 Object Destructuring: Unpacks properties from objects into variables, supports renaming variables, setting default values, and destructuring nested objects.
 Function Parameters: Destructuring can be used directly in function parameters to make your code more concise and readable.  */
