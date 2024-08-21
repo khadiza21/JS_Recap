@@ -18,4 +18,4 @@ console.log(flower.join(" --> "));
 // concat
 const line1 = "Twinkle Twinkle";
 const line2 = "Little Star";
-console.log(line1.concat(line2));
+console.log(line1.concat(' ').concat(line2));
