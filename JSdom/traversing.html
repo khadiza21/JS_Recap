@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <header>
+    Traversing Dom 
+   </header> 
+   <main>
+    <h1>My awesome DOM </h1>
+    <ul>
+        <li> Lorem, ipsum.</li>
+        <li> Lorem, kalsul.</li>
+        <li> Lorem, ipsum dolor.</li>
+        <li> Lorem.</li>
+        <li> Lorem ipsum dolor sit.</li>
+    </ul>
+   </main>
+   <script>
+    const liCollection = document.getElementsByTagName('li'); //here it's like array but not array it's HTMLCollection
+    console.log(liCollection) ;
+    for (const li of liCollection){
+        console.log(li.innerText);
+    }
+   </script>
+</body>
+</html>
