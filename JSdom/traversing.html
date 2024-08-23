@@ -8,14 +8,43 @@
   <body>
     <header>Traversing Dom</header>
     <main>
-      <h1 id="title" class="one two three">My <span>awesome DOM</span> </h1>
-      <ul class="list">
-        <li class="aswsomeList">Lorem, ipsum.</li>
-        <li class="aswsomeList">Lorem, kalsul.</li>
-        <li class="aswsomeList">Lorem, ipsum dolor.</li>
-        <li class="aswsomeList">Lorem.</li>
-        <li class="aswsomeList">Lorem ipsum dolor sit.</li>
-      </ul>
+      <h1 id="title" class="one two three">My <span>awesome DOM</span></h1>
+      <section class="flower">
+        <ul class="flowerlist">
+          <li>Lily</li>
+          <li>Rose</li>
+          <li>Daisy</li>
+          <li>Lotus</li>
+          <li>Jarul</li>
+        </ul>
+      </section>
+      <section class="fruits">
+        <ul class="fruitlist">
+          <li>Mango</li>
+          <li>Banana</li>
+          <li>Jack fruit</li>
+          <li>Pine Apple</li>
+          <li>Black Berry</li>
+        </ul>
+      </section>
+      <section class="books">
+        <ul class="booklist">
+          <li>Algorithm</li>
+          <li>JavaScript</li>
+          <li>CPP</li>
+          <li>Python</li>
+          <li>OOP</li>
+        </ul>
+      </section>
+      <section>
+        <ul class="list">
+          <li class="aswsomeList">Lorem, ipsum.</li>
+          <li class="aswsomeList">Lorem, kalsul.</li>
+          <li class="aswsomeList">Lorem, ipsum dolor.</li>
+          <li class="aswsomeList">Lorem.</li>
+          <li class="aswsomeList">Lorem ipsum dolor sit.</li>
+        </ul>
+      </section>
     </main>
     <script>
       //  getElementsByTagName
@@ -41,7 +70,7 @@
       }
       console.log("querySelector", document.querySelector("li"));
 
-      //
+      //getAttribute
       const styleElement = (document.getElementById("title").style.textAlign =
         "center");
       console.log(styleElement);
@@ -50,7 +79,7 @@
       console.log(title.getAttribute("class"));
       console.log(title.getAttribute("id"));
       console.log(title.classList);
-      title.classList.remove('one');
+      title.classList.remove("one");
       console.log(title.classList);
       title.classList.add("four");
       console.log(title.classList);
@@ -58,6 +87,16 @@
       console.log(document.getElementsByClassName("list")[0].innerHTML);
       console.log(document.getElementsByClassName("list")[0].innerText);
 
+      // styling dom Properties , add and remove css class using JS
+      const sections = document.querySelectorAll("section");
+      console.log(sections);
+      for (const section of sections) {
+        section.style.border = "2px solid steelblue";
+        section.style.marginBottom = "5px";
+        section.style.borderRadius = "15px";
+        section.style.paddingLeft = "7px";
+        section.style.backgroundColor = "lightgreen";
+      }
 
       /* 
        1. QuerySelector give NodeList but GetElementByClassName give HTMLCollection.
@@ -66,6 +105,7 @@
     */
       // https://www.freecodecamp.org/news/dom-manipulation-htmlcollection-vs-nodelist/
       // https://stackoverflow.com/questions/15763358/difference-between-htmlcollection-nodelists-and-arrays-of-objects
+      // https://developer.mozilla.org/en-US/docs/Web/API/Node
     </script>
   </body>
 </html>
