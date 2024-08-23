@@ -8,7 +8,7 @@
   <body>
     <header>Traversing Dom</header>
     <main>
-      <h1 id="title">My awesome DOM</h1>
+      <h1 id="title" class="one two three">My <span>awesome DOM</span> </h1>
       <ul class="list">
         <li class="aswsomeList">Lorem, ipsum.</li>
         <li class="aswsomeList">Lorem, kalsul.</li>
@@ -34,21 +34,38 @@
       const listGroup = document.getElementsByClassName("aswsomeList");
       console.log(listGroup[0].innerHTML);
 
-
-    // 
-    const queryGroup = document.querySelectorAll("ul>li");
-    for(const li of queryGroup){
+      //
+      const queryGroup = document.querySelectorAll("ul>li");
+      for (const li of queryGroup) {
         console.log("new", li.innerHTML);
-    }
-     console.log('querySelector', document.querySelector("li")); 
+      }
+      console.log("querySelector", document.querySelector("li"));
+
+      //
+      const styleElement = (document.getElementById("title").style.textAlign =
+        "center");
+      console.log(styleElement);
+      console.log("Start");
+      const title = document.getElementById("title");
+      console.log(title.getAttribute("class"));
+      console.log(title.getAttribute("id"));
+      console.log(title.classList);
+      title.classList.remove('one');
+      console.log(title.classList);
+      title.classList.add("four");
+      console.log(title.classList);
+      title.setAttribute("title", "tooltip set ");
+      console.log(document.getElementsByClassName("list")[0].innerHTML);
+      console.log(document.getElementsByClassName("list")[0].innerText);
+
 
       /* 
        1. QuerySelector give NodeList but GetElementByClassName give HTMLCollection.
        2. QuerySelector is static but GetElementByClassName is live.
        3. QuerySelector use forEach loop but GetElementByClassName use forOf loop.
     */
-    // https://www.freecodecamp.org/news/dom-manipulation-htmlcollection-vs-nodelist/
-    // https://stackoverflow.com/questions/15763358/difference-between-htmlcollection-nodelists-and-arrays-of-objects
+      // https://www.freecodecamp.org/news/dom-manipulation-htmlcollection-vs-nodelist/
+      // https://stackoverflow.com/questions/15763358/difference-between-htmlcollection-nodelists-and-arrays-of-objects
     </script>
   </body>
 </html>
