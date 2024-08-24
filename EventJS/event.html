@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event in JS</title>
+</head>
+<body>
+    <!-- add onclick handler directly of Via JS -->
+     <!-- option one -->
+     <h1 onclick="console.log('I am clicked')">DOM is Document Object Model. </h1>
+     <button title="This is a tooltip" onclick="console.log(7)">Click </button>
+     <button onclick="console.log(450)">Another Button </button>
+     <br>
+     <button onclick="document.body.style.background = 'gray' ">View</button>
+     <!-- option 2 -->
+     <button onclick=makeReset()>Reset</button>
+     <!-- option 3 -->
+     <button id="makeBlue">Light Blue</button>
+     <button id="makePurple">Purple</button>
+     <script>
+        // option 2
+        function makeReset (){
+            document.body.style.backgroundColor = '#f9f9f9';
+        }
+     </script>
+
+    
+    <script src="event.js"></script>
+</body>
+</html>
+<!-- https://developer.mozilla.org/en-US/docs/Web/API/Event -->
