@@ -7,7 +7,7 @@
   </head>
   <body>
     <header>Traversing Dom</header>
-    <main>
+    <main id="traversing">
       <h1 id="title" class="one two three">My <span>awesome DOM</span></h1>
       <section class="flower">
         <ul class="flowerlist">
@@ -36,7 +36,7 @@
           <li>OOP</li>
         </ul>
       </section>
-      <section>
+      <section class="lists">
         <ul class="list">
           <li class="aswsomeList">Lorem, ipsum.</li>
           <li class="aswsomeList">Lorem, kalsul.</li>
@@ -97,6 +97,30 @@
         section.style.paddingLeft = "7px";
         section.style.backgroundColor = "lightgreen";
       }
+
+      // NodeList, HtmlCollection, ParentNode, ChildNodes,
+      console.log("New .............");
+      const traversing1 = document.getElementById("traversing");
+      console.log(traversing1.childNodes[2].childNodes);
+      console.log(traversing1.firstChild.ELEMENT_NODE);
+      console.log(traversing1.lastChild.ELEMENT_NODE);
+      console.log(traversing1.childNodes[3].nextSibling);
+      console.log(traversing1.lastChild.previousSibling);
+
+      console.log("Create Element");
+      const placesUL = document.querySelector(".flower ul");
+      console.log(placesUL);
+      console.log(placesUL.parentNode.parentNode);
+      console.log(placesUL.childNodes.childNodes);
+      console.log(placesUL.parentNode.childNodes);
+    
+
+      // createElement
+  const myElem = document.createElement('div');
+  myElem.innerText = "DOM for Document Object Model";
+  myElem.style.color = 'red';
+  console.log(document);
+  document.body.section.appendChild(myElem)
 
       /* 
        1. QuerySelector give NodeList but GetElementByClassName give HTMLCollection.
