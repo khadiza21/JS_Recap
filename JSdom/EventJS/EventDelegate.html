@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegation</title>
+</head>
+<body>
+    <section id="listContainer">
+        <ul id="items">
+            <li class="item">Event Delegation</li>
+            <li class="item">Event Delegation</li>
+            <li class="item">Event Delegation</li>
+            <li class="item">Event Delegation</li>
+            <li class="item">Event Delegation</li>
+        </ul>
+        <button id="btn">Add Item</button>
+    </section>
+    <script>
+        // const items = document.getElementsByClassName('item');
+        // for(const item of items){
+        //     item.addEventListener('click', function(event){
+        //        event.target.parentNode.removeChild(event.target);
+        //     })
+        // }
+
+
+        document.getElementById('listContainer').addEventListener('click', function(event){
+            event.target.parentNode.removeChild(event.target);
+        })
+
+        document.getElementById('btn').addEventListener('click', function(){
+            const listContainer = document.getElementById('listContainer');
+            const li = document.createElement('li');
+            li.innerText = 'Brand new item added';
+            li.classList.add('item');
+            listContainer.appendChild(li)
+        })
+    </script>
+</body>
+</html>
+<!-- not execute properly -->
