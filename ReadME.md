@@ -46,5 +46,16 @@
 12. Tell us the difference between for...of and for...in.
 13. Explain this keyword in JS 
 14. Explain this keyword In JS class and other Places. 
+15. What's the difference between map, for each , filter ?
+16. What's the difference between and filter and find?
+17. What's the difference between and for...of and for...in ?
+18. How do you empty an array?
+19. Difference between class and object.
+20. What does destructing do in es6?
+21. Is optional chaining is same as ternary operator?
+22. What do you mean by dot notation and bracket notation? When should you use dot notation or bracket notation?
+23. What is Prototype chain? or How does inheritance work in JS? 
+24. Why JS called Dynamic type language ?
+
 
 
