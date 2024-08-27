@@ -44,5 +44,7 @@
 10. Tell us the difference between arrow and regular Function.
 11. Tell us the difference between seal and freeze.
 12. Tell us the difference between for...of and for...in.
+13. Explain this keyword in JS 
+14. Explain this keyword In JS class and other Places. 
 
 
