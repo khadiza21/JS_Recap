@@ -16,7 +16,7 @@ console.log(result);
 
 const double2 = numbers.map((n) => n * 2); //Map  take  the ( numbers ) array and do the task from arrow function for all element of numbers array  and will return a array .
 
-// like map : for each, filter, find
+// near to map : for each, filter, find
 // for each - like map but don't return
 const res = numbers.forEach((n) => console.log(n));
 // filter - selects elements based on  a condition and returns an array with the elements that fulfilled the condition.
