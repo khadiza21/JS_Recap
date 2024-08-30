@@ -56,6 +56,16 @@
 22. What do you mean by dot notation and bracket notation? When should you use dot notation or bracket notation?
 23. What is Prototype chain? or How does inheritance work in JS? 
 24. Why JS called Dynamic type language ?
+25. Tell the difference Between Primitive and Non-Primitive Data Types in JS.
+26. What are the Truthy and Falsy values? Give me some examples. 
+27. What is the difference between null and undefined? *
+28. What are the differences between double equal (==) and triple equal (===)? ***
+29. What is scope in JS? *
+30. Define block scope and global scope. **
+31. What is hoisting in JS?
+32. How to use the JS callback function? 
+33. Explain closure in JS. ***
+34. Explain passed by value and passed by reference. 
 
 
 
