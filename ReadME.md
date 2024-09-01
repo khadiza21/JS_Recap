@@ -68,4 +68,30 @@
 34. Explain passed by value and passed by reference. 
 
 
+## API
+1. What is an api?
+2. What are the HTTP methods supported by REST?
+3. Can you use GET request instead of PUT to create a resource?
+4. What is the difference between PUT and POST?
+5. What is JSON?
+6. What are CRUD operations?
+7. What is the file extension of JSON?
+8. What are the data types supported by JSON?
+9. What is the role of JSON.stringify? 
+10. Show how to parse a JSON.
+11. Tell us the difference between GET and POST.
 
+
+
+ ## ** REST API Methods **
+- GET : Receive information about an API resource . 
+- POST: Create An API resource.
+- PUT: Remove Previous data and set new data. If have no previous data Then set new data. (add New data ) 
+- PATCH: Update Previous data. (Partially update existing data)
+- DELETE: Delete an API resource. 
+
+
+CREATE, READ , UPDATE, DELETE : CRUD
+
+
+Client side req server connect database 
