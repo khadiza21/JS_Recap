@@ -1,4 +1,48 @@
 # JavaScript
+
+## What is JS?
+### JS is a highly abstracted programming Language. 
+- High Abstraction is a way of  hiding the implementation details and showing only the functionality to the users. Example: ATM Machine.
+- High Abstract in JS
+1. We don't have to handle resource management and memory allocation
+2. We don't have to handle garbage collection.
+3. Reduces details so that developers can focus on logic better. 
+4. Improves understandability as well as maintainability of the code. 
+
+#### Garbage Collection
+- JS automatically collects unused data.
+- Free the memory with the help of an algorithm called "Mark-And-Sweep".
+- The garbage collector goes through the roots, marking (remembering) them on its way.
+- It then moves on to the reference and marks them as well .
+- The cycle continues until the garbage collector visits all the roots and reference.
+- The garbage collector removes all the objects, except the marked ones.
+
+
+### JS is JIT programming Language. 
+- JS is not a purely interpreted lang.
+- Modern JS is JIT complied.
+- JUST-IN-TIME compiler converts the entire code into machine code and execute them immediately
+
+### JS is a multi-paradigm programming Language. 
+Paradigm: code structure that will  determine the style or a way of programming.
+- Procedural Programming. (It involves writing down instruction. It tells the computer what it should do step-by-step.)
+
+- Object Oriented Programming: It modeling a system as a collection of objects. Objects contain both function (or methods) and data.
+
+- Functional Programming: An approach to software development that uses pure function. To create maintainable software.
+
+### JS is a Proto-Typed based programming Language.
+- In JS , everything (function , array, objects) is object except the primitive data.
+- A prototypical object is an object used as a template from which to get the initial properties for a new object.
+- Proto-type is a blue print.
+- Example: Array prototype use Methods which are .push(), .pop(), .indexOf(). names.pop() inherit the names array property Pop Methods.
+
+### JS is a Dynamically-Typed based programming Language.
+- When you declare a variable , you do not need to specify what type this variable is.
+- JS engine infers what type this variable is based on the value assigned to at run time. 
+- As JS determines the type at runtime we can re-declare the type. 
+
+
 ## Basic JS Events All In One
 #### M25-10
 - What are events in web?
