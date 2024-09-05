@@ -1,6 +1,6 @@
 # JavaScript
 
-## What is JS?
+## What is JS? **** 
 ### JS is a highly abstracted programming Language. 
 - High Abstraction is a way of  hiding the implementation details and showing only the functionality to the users. Example: ATM Machine.
 - High Abstract in JS
@@ -110,7 +110,59 @@ Paradigm: code structure that will  determine the style or a way of programming.
 32. How to use the JS callback function? 
 33. Explain closure in JS. ***
 34. Explain passed by value and passed by reference. 
+35. What is V8 engine? 
+36. JS v8 internal mechanism ? (JS source code -> chrome V8 engine -> (Parsing -> AST-Abstract Syntax Tree -> (Ignition) Byte Code -> Machine Code (Machine Code) -> Code runs on the CPU))
 
+37. Execution context? 
+- An execution context is an environment.
+- Inside the execution context a piece of JS code gets executed.
+- Variables, parameters and other information related to the piece of code get stored in the execution context.
+
+38. Execution Context are two kinds of Execution Context in JS.(1. Global & 2. Functional Execution Context)
+
+39. Global Execution Context: Whenever the JS engine receives a script file, it first creates a default Execution Context known as the GEC.
+- It's the base/default Execution Context.
+- All JS code that is not inside of a function gets executed.
+- For all JS file, there can only be one GEC. 
+
+40. Functional Execution Context:  Whenever a function is called , the JS engine creates a different type of Execution Context knows as a Function Execution Context. 
+- Every time a function is called, a new execution context is created for that function.
+- Each function has its own execution context.
+- Since every function call get its own FEC, there can be more than one FEC in the run-time of a script.
+
+41. The context execution context is created in two phase. 
+- Creation Phase .
+- Execution Phase . 
+
+42. What is call Stack?
+43. Is JS Single threaded by nature? Yes 
+44. What is single threaded?
+- Single threaded means only one statement is executed at a time. 
+- JS only has one call stack.
+- JS runs code line by line.
+- Must finish executing a piece of code before moving onto the next.
+
+44. Difference between synchronous and Asynchronous?
+45. setTimeout, fetch is synchronous or asynchronous?
+46. How asynchronous JS works?
+- The (anonymous) function executes the script.
+- main() calls first() and first() calls setTimeout().
+- setTimeout() pops off the call stack before main() can call second().
+
+47. Promise in JS? --> The promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value. A promise is in one of these states:
+    1. Pending(New promise), 
+    2. full filled by Resolve(.then() - async code), 
+    3. Reject with error handling (.catch())
+- At first create new promise then consume by then or catch.
+
+48. Async/awint keyword in JS.
+- It's a special syntax to work with promise in a more comfortable way .
+- It's surprisingly easy to understand and use.
+- The await keyword can only be used inside async function, it makes the function pause the execution and wait for a resolved promise before it continues.
+
+49. What is JS Event Loop? ****
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop
+- https://youtu.be/8aGhZQkoFbQ?si=Yy7vufG3vi81GqlR 
 
 ## API
 1. What is an api?
