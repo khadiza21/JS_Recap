@@ -200,15 +200,8 @@ Paradigm: code structure that will  determine the style or a way of programming.
 - PATCH: Update Previous data. (Partially update existing data)
 - DELETE: Delete an API resource. 
 
-
 CREATE, READ , UPDATE, DELETE : CRUD
-
-
 Client side req server connect database 
-
-
-
-
 
 
 
