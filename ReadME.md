@@ -191,6 +191,8 @@ Paradigm: code structure that will  determine the style or a way of programming.
 
 
 
+
+
  ## ** REST API Methods **
 - GET : Receive information about an API resource . 
 - POST: Create An API resource.
@@ -203,3 +205,35 @@ CREATE, READ , UPDATE, DELETE : CRUD
 
 
 Client side req server connect database 
+
+
+
+
+
+
+
+##  JS need to know for React
+### ES6 
+1. template string
+2. arrow function
+3. spread operation
+
+### Array Methods
+1. Map : Return array.
+2. ForEach : no Return.
+3. Filter
+4. Find
+
+### Destructuring
+1. array destructuring . In right side can be function/array/variable
+2. Object destructuring. 
+
+### Others
+1. JSON : stringify, parse
+2. Fetch  
+3. Keys : Object.keys
+4. Values : Object.values
+5. For of : can be use array like object
+6. For In : use for object
+
+
