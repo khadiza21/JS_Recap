@@ -110,7 +110,7 @@ Paradigm: code structure that will  determine the style or a way of programming.
 32. How to use the JS callback function? 
 33. Explain closure in JS. ***
 34. Explain passed by value and passed by reference. 
-35. What is V8 engine? 
+35. What is V8 engine?  Tell me something about JS engine v8 internal mechanism.
 36. JS v8 internal mechanism ? (JS source code -> chrome V8 engine -> (Parsing -> AST-Abstract Syntax Tree -> (Ignition) Byte Code -> Machine Code (Machine Code) -> Code runs on the CPU))
 
 37. Execution context? 
@@ -135,7 +135,7 @@ Paradigm: code structure that will  determine the style or a way of programming.
 - Execution Phase . 
 
 42. What is call Stack?
-43. Is JS Single threaded by nature? Yes 
+43. Is JS Single threaded by nature? (Yes) How does it handle asynchronous call? 
 44. What is single threaded?
 - Single threaded means only one statement is executed at a time. 
 - JS only has one call stack.
@@ -160,9 +160,21 @@ Paradigm: code structure that will  determine the style or a way of programming.
 - It's surprisingly easy to understand and use.
 - The await keyword can only be used inside async function, it makes the function pause the execution and wait for a resolved promise before it continues.
 
-49. What is JS Event Loop? ****
+49. Explain the difference between an async/await and promise?
+50. What's the error handling strategy for promises that were rejected while awaiting?
+51. Explain the .then() method does?
+52. Difference between setTimeOut() and setInterval()?
+53. Error Handling:
+- try...catch : The 'try' statement defines a code block to run(to try). the 'catch' statement defines a code block to any error.
+- finally: The finally statement defines a code block to run regardless of the result.
+- throw: The 'throw' statement defines a custom error. In 'try' block can throw an exception (throw an error).  The exception can be a String, a Number, a Boolean, and an Object.
+
+
+54. What is Event Loop in JS? ****
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop
 - https://youtu.be/8aGhZQkoFbQ?si=Yy7vufG3vi81GqlR 
+- http://latentflip.com/loupe/ 
+- https://www.jsv9000.app/
 
 ## API
 1. What is an api?
